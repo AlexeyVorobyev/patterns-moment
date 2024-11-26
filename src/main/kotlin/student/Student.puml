@@ -1,6 +1,6 @@
 @startuml
 
-package org.korsnaike.pattern {
+package org.lexxv.pattern {
     class Student {
         - id: Int
         - lastName: String

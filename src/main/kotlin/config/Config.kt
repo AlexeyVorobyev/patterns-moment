@@ -1,4 +1,4 @@
-package org.korsnaike.config
+package org.lexxv.config
 
 object Config {
     val db_host: String = "localhost";

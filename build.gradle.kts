@@ -3,7 +3,7 @@ plugins {
     kotlin("plugin.serialization") version "2.0.20"
 }
 
-group = "org.korsnaike"
+group = "org.lexxv"
 version = "1.0-SNAPSHOT"
 
 repositories {

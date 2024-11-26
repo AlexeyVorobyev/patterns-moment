@@ -1,7 +1,7 @@
-package org.korsnaike.db
+package org.lexxv.db
 
-import org.korsnaike.config.Config
-import org.korsnaike.db.exceptions.DbConnectionException
+import org.lexxv.config.Config
+import org.lexxv.db.exceptions.DbConnectionException
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet

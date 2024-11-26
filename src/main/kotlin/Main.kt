@@ -1,16 +1,16 @@
-package org.korsnaike
+package org.lexxv
 
-import org.korsnaike.adapter.StudentListFileAdapter
-import org.korsnaike.db.DbInterface
-import org.korsnaike.db.PostgreDb
-import org.korsnaike.pattern.student.Data_list_student_short
-import org.korsnaike.strategy.Student_list
-import org.korsnaike.strategy.Student_list_file
-import org.korsnaike.strategy.Student_list_DB
-import org.korsnaike.strategy.studentfileprocessing.StudentJsonFileProcessor
-import org.korsnaike.strategy.studentfileprocessing.StudentYamlFileProcessor
-import org.korsnaike.student.Student
-import org.korsnaike.student.Student_short
+import org.lexxv.adapter.StudentListFileAdapter
+import org.lexxv.db.DbInterface
+import org.lexxv.db.PostgreDb
+import org.lexxv.pattern.student.Data_list_student_short
+import org.lexxv.strategy.Student_list
+import org.lexxv.strategy.Student_list_file
+import org.lexxv.strategy.Student_list_DB
+import org.lexxv.strategy.studentfileprocessing.StudentJsonFileProcessor
+import org.lexxv.strategy.studentfileprocessing.StudentYamlFileProcessor
+import org.lexxv.student.Student
+import org.lexxv.student.Student_short
 import javax.xml.stream.util.StreamReaderDelegate
 
 fun getDb() : DbInterface = PostgreDb.getInstance()

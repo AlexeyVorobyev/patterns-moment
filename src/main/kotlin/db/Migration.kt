@@ -1,8 +1,8 @@
-package org.korsnaike.db
+package org.lexxv.db
 
-import org.korsnaike.config.Config
-import org.korsnaike.db.migrationstore.JsonMigrationStore
-import org.korsnaike.db.migrationstore.MigrationStoreInterface
+import org.lexxv.config.Config
+import org.lexxv.db.migrationstore.JsonMigrationStore
+import org.lexxv.db.migrationstore.MigrationStoreInterface
 
 /**
  * Базовый класс для миграций.

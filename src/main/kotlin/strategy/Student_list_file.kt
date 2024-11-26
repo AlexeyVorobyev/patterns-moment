@@ -1,11 +1,11 @@
-package org.korsnaike.strategy
+package org.lexxv.strategy
 
-import org.korsnaike.pattern.Data_list
-import org.korsnaike.pattern.student.Data_list_student_short
-import org.korsnaike.strategy.studentfileprocessing.StudentFileProcessorInterface
-import org.korsnaike.strategy.studentfileprocessing.StudentTxtFileProcessor
-import org.korsnaike.student.Student
-import org.korsnaike.student.Student_short
+import org.lexxv.pattern.Data_list
+import org.lexxv.pattern.student.Data_list_student_short
+import org.lexxv.strategy.studentfileprocessing.StudentFileProcessorInterface
+import org.lexxv.strategy.studentfileprocessing.StudentTxtFileProcessor
+import org.lexxv.student.Student
+import org.lexxv.student.Student_short
 
 class Student_list_file(
     private var students: MutableList<Student>,

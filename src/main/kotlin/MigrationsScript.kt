@@ -1,14 +1,14 @@
-package org.korsnaike
+package org.lexxv
 
 /**
  * Вспомогательный скрипт для запуска и отката миграций.
  * Вбирает в себя набор дополнительных рефлексивных функций и инициализацию скрипта.
  */
 
-import org.korsnaike.db.Migration
-import org.korsnaike.db.MigrationList
-import org.korsnaike.db.migrationstore.JsonMigrationStore
-import org.korsnaike.db.migrationstore.MigrationStoreInterface
+import org.lexxv.db.Migration
+import org.lexxv.db.MigrationList
+import org.lexxv.db.migrationstore.JsonMigrationStore
+import org.lexxv.db.migrationstore.MigrationStoreInterface
 import java.io.File
 import kotlin.reflect.full.createInstance
 
@@ -35,13 +35,19 @@ fun getUnusedClassesForUp(
     if (migrationsDir.exists() && migrationsDir.isDirectory) {
         migrationsDir.walk().filter { it.isFile && it.name.endsWith(".kt") }.forEach { file ->
             var className = file.nameWithoutExtension
+            println(className)
             if (!excludedClasses.contains(className)) {
-                className = "org.korsnaike.migrations.$className"
+                className = "org.lexxv.migrations.$className"
+                println(className)
                 val kClass = Class.forName(className).kotlin
                 val instance = kClass.createInstance() // Проверяем, что класс можно проинстанциировать
                 unusedClasses.add(instance as Migration)
+            } else {
+                println("excluded class: $className")
             }
         }
+    } else {
+        println("dir not exist")
     }
 
     return unusedClasses
@@ -54,7 +60,7 @@ fun initInstancesForDown(count: Int): List<Migration> {
     val migrationList = getStore().getAlreadyUpMigrationNames().takeLast(count)
     return migrationList.asSequence()
         .map { migrationName ->
-            val className = "org.korsnaike.migrations." + migrationName
+            val className = "org.lexxv.migrations." + migrationName
             val kClass = Class.forName("$className").kotlin
             kClass.createInstance() as Migration
         }
@@ -66,6 +72,7 @@ fun initInstancesForDown(count: Int): List<Migration> {
  */
 fun scriptForUp() {
     val classes = getUnusedClassesForUp("src/main/kotlin/migrations", getStore().getAlreadyUpMigrationNames())
+    println(classes)
     val migrationList = MigrationList(classes)
     migrationList.allUp()
 }

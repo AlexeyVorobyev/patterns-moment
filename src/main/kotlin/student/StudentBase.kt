@@ -1,4 +1,4 @@
-package org.korsnaike.student
+package org.lexxv.student
 
 import kotlinx.serialization.Serializable
 

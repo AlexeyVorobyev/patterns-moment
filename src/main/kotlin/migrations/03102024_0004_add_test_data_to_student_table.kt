@@ -1,6 +1,6 @@
-package org.korsnaike.migrations
+package org.lexxv.migrations
 
-import org.korsnaike.db.Migration
+import org.lexxv.db.Migration
 
 class `03102024_0004_add_test_data_to_student_table` : Migration() {
     override fun up() {

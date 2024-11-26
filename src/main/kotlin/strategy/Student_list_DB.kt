@@ -1,13 +1,13 @@
-package org.korsnaike.strategy
+package org.lexxv.strategy
 
-import org.korsnaike.adapter.StudentListInterface
-import org.korsnaike.config.Config
-import org.korsnaike.db.PostgreDb
-import org.korsnaike.db.DbInterface
-import org.korsnaike.pattern.Data_list
-import org.korsnaike.pattern.student.Data_list_student_short
-import org.korsnaike.student.Student
-import org.korsnaike.student.Student_short
+import org.lexxv.adapter.StudentListInterface
+import org.lexxv.config.Config
+import org.lexxv.db.PostgreDb
+import org.lexxv.db.DbInterface
+import org.lexxv.pattern.Data_list
+import org.lexxv.pattern.student.Data_list_student_short
+import org.lexxv.student.Student
+import org.lexxv.student.Student_short
 import java.sql.SQLException
 import java.sql.Statement
 

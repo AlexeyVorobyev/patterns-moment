@@ -1,6 +1,6 @@
-package org.korsnaike.db
+package org.lexxv.db
 
-import org.korsnaike.config.Config
+import org.lexxv.config.Config
 import java.sql.Connection
 import java.sql.ResultSet
 

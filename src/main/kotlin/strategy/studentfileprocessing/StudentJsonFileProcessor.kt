@@ -1,8 +1,8 @@
-package org.korsnaike.strategy.studentfileprocessing
+package org.lexxv.strategy.studentfileprocessing
 
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import org.korsnaike.student.Student
+import org.lexxv.student.Student
 import java.io.File
 
 class StudentJsonFileProcessor: StudentFileProcessorInterface {

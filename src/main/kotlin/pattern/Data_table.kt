@@ -1,4 +1,4 @@
-package org.korsnaike.pattern
+package org.lexxv.pattern
 
 class Data_table<T> private constructor(private val data: List<List<T>>) {
     companion object {

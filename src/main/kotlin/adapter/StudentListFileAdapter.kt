@@ -1,8 +1,8 @@
-package org.korsnaike.adapter
+package org.lexxv.adapter
 
-import org.korsnaike.pattern.student.Data_list_student_short
-import org.korsnaike.strategy.Student_list_file
-import org.korsnaike.student.Student
+import org.lexxv.pattern.student.Data_list_student_short
+import org.lexxv.strategy.Student_list_file
+import org.lexxv.student.Student
 
 class StudentListFileAdapter(private val studentListFile: Student_list_file) : StudentListInterface {
 

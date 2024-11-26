@@ -1,4 +1,4 @@
-package org.korsnaike.db.migrationstore
+package org.lexxv.db.migrationstore
 
 /**
  * Интерфейс для работы с хранилищем миграций.

@@ -1,7 +1,7 @@
-package org.korsnaike.adapter
+package org.lexxv.adapter
 
-import org.korsnaike.pattern.student.Data_list_student_short
-import org.korsnaike.student.Student
+import org.lexxv.pattern.student.Data_list_student_short
+import org.lexxv.student.Student
 
 interface StudentListInterface {
 

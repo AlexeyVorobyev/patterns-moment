@@ -1,4 +1,4 @@
-package org.korsnaike.db
+package org.lexxv.db
 
 import java.util.Comparator
 

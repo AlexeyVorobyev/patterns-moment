@@ -1,4 +1,4 @@
-package org.korsnaike.pattern
+package org.lexxv.pattern
 
 abstract class Data_list<T : Comparable<T>>(protected val elements: List<T>) {
     private val selectedIndices = mutableSetOf<Int>()

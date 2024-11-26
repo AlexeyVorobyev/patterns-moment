@@ -1,4 +1,4 @@
-package org.korsnaike.db.exceptions
+package org.lexxv.db.exceptions
 
 class DbConnectionException(message: String) : Exception(message) {
 }

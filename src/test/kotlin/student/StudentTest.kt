@@ -1,4 +1,4 @@
-package org.korsnaike.student
+package org.lexxv.student
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*

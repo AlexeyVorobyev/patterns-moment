@@ -1,6 +1,6 @@
-package org.korsnaike.strategy.studentfileprocessing
+package org.lexxv.strategy.studentfileprocessing
 
-import org.korsnaike.student.Student
+import org.lexxv.student.Student
 import java.io.File
 import java.io.FileNotFoundException
 

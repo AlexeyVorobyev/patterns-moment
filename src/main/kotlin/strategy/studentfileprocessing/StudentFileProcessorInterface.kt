@@ -1,6 +1,6 @@
-package org.korsnaike.strategy.studentfileprocessing
+package org.lexxv.strategy.studentfileprocessing
 
-import org.korsnaike.student.Student
+import org.lexxv.student.Student
 
 /**
  * Интерфейс для классов, предназначенных для реализации работы с разным видом записи и чтения из файлов

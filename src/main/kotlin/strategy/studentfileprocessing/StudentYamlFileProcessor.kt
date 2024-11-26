@@ -1,9 +1,9 @@
-package org.korsnaike.strategy.studentfileprocessing
+package org.lexxv.strategy.studentfileprocessing
 
 import com.charleskorn.kaml.Yaml
 import com.charleskorn.kaml.decodeFromStream
 import kotlinx.serialization.encodeToString
-import org.korsnaike.student.Student
+import org.lexxv.student.Student
 import java.io.File
 
 class StudentYamlFileProcessor: StudentFileProcessorInterface {
